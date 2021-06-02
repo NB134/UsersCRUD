@@ -1,0 +1,27 @@
+<div class="formContainer">
+  
+        <form name="userForm" ng-submit="updateData()">
+
+            <div layout-gt-xs="row">
+              <md-input-container class="md-block" flex-gt-xs>
+                <label>First Name</label>
+                <input ng-model="user.first_name">
+              </md-input-container>
+    
+              <md-input-container class="md-block" flex-gt-xs>
+                <label>Last Name</label>
+                <input ng-model="user.last_name">
+              </md-input-container>
+            </div>
+    
+            <div layout-gt-sm="row">
+                <md-input-container>
+                    <label>Email</label>
+                    <input ng-model="user.email" type="email">
+                  </md-input-container>
+            </div>
+            <div>
+                <md-button  type="submit">Submit</md-button>
+              </div>
+          </form>
+</div>

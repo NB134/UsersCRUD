@@ -1,0 +1,15 @@
+<div class="row">
+    <h1>Users Dashboard</h1>
+    <div class="Controls">
+      <button ng-click="addUser()">Add User</button>
+    </div>
+  </div>
+    <div class="UserCardsContainer">
+      <div class="userCard" ng-repeat="x in users">
+          <span class="close" ng-click="removeUser(x.id)">×</span>
+        <img ng-src="{{x.avatar}}" />
+        <h3>{{x.first_name}} {{x.last_name}}</h3>
+        <h4>{{x.email}}</h4>
+        <button class="update" ng-click="updateUser(x.id)">Update User</button>
+      </div>
+    </div>

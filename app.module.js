@@ -1,0 +1,1 @@
+let app = angular.module('UserDashboard',['ngMaterial', 'ngMessages','ngRoute']);

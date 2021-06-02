@@ -1,0 +1,14 @@
+app.config(function($routeProvider){
+    $routeProvider
+    .when("/addUser",{
+        templateUrl:'./addUserForm/addUser.template.html',
+        controller:'addForm'
+    })
+    .when("/updateUser",{
+        templateUrl:'./updateUser/updateUser.template.html',
+        controller:'updateForm'
+    })
+    .when("/",{
+        templateUrl:'./Users/users.template.html'
+    })
+})

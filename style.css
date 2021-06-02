@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding:2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;;
+}
+.row{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em;
+    gap:1em;
+    font-size:1.3em;
+}
+.row button{
+    font-size: 1em;
+    padding:0.5em 1em;
+    cursor: pointer;
+}
+.UserCardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0.5em 1em;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:1em;
+}
+.userCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding:1.5em;
+    gap:0.5em;
+    min-height:300px;
+    min-width:250px;
+    background-color: black;
+    color: white;;
+    box-shadow: 0 10px 6px -6px #777;
+}
+button{
+    padding:0.5em 1em;
+    background-color: transparent;
+    border:none;
+    transition:all 0.3s ease-in-out;
+}
+button:hover{
+    background-color: black;
+    color:white;
+}
+
+.update{
+    color:white;
+}
+.update:hover{
+    background-color: aliceblue;
+    color:black;
+}
+.userCard .close{
+    position: absolute;
+    top:0.1em;
+    font-size:1.5em;
+    right:0.3em;
+    cursor: pointer;
+    user-select: none;
+}
