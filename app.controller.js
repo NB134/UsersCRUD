@@ -5,6 +5,8 @@ app.controller("main",function($scope,api,$location)
             api.getUsers(flag).then(function(data){
                 console.log("getUsersController",data);
                 $scope.users=data;
+            }, function(res){
+                console.log("errorHandled",res);
             });
         
     }
@@ -29,6 +31,8 @@ app.controller("main",function($scope,api,$location)
             console.log("dataDeleted",res);
             // $scope.initializeData(1); would have been called to fetch data from server after deletion but the dummy api does not actually delete it hence manipulations will be on the client side
             
+        }, function(res){
+            console.log("errorHandled",res);
         });
         
     }

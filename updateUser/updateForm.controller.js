@@ -15,6 +15,8 @@ app.controller("updateForm",function($scope,api,$location){
     {
         api.updateUser($scope.user,id).then(function(response){
             console.log("user Updated",response);
+        }, function(res){
+            console.log("errorHandled",res);
         });
         $scope.users[index]=$scope.user;
         $location.path("/");
